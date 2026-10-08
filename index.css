@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Might";
+    src: url("fonts/Might.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Might", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+
+figure {
+    margin: 0;
+}
+
+.heroSection{
+    height: 100dvh;
+    overflow: hidden;
+    display: block;
+}
+
+
+.heroText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.heroText p {
+    position: absolute;
+    margin: 0;
+    /* font-size: 80px; */
+    font-size: clamp(32px, calc(50px + 5vw), 130px);
+    font-weight: 500;
+}
+.line{
+    font-size: clamp(30px, 5vw, 30px);
+}
+
+.heroText p:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    /* color: #BEC3C9; */
+}
+
+.heroText p:nth-child(5) {
+    bottom: 5%;
+    right: 5%;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: white;
+}
+
+#heroImage {
+    display: block;
+    width: 100%;
+    height: 100dvh;
+    object-fit: cover;
+    object-position: center;
+}
+#menuBtn{
+    display: none;
+    font-size: 30px;
+}
+#menuBtn{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+.menuScreen{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.menuScreen ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.menuScreen ul li a {
+    text-decoration: none;
+    color: white ;
+}
+.line p:hover{
+    cursor: pointer;
+}
+.line ul{
+    display: flex;
+}
+.line ul li:hover{
+    cursor: pointer;
+}
+.navLinks{
+    inset: 0;
+    width: 100%;
+    height: 0;
+}
+.navScreen{
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100dvh;
+    z-index: 100;
+    transform: translateY(-100%);
+}
+.navScreen p{
+    font-size: 30px;
+}
+
+#navItemsList{
+    margin-top: 200px;
+    list-style: none;
+}
+#navItemsList li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 70px;
+}
+hr{
+    margin: 0px;
+}
+/* .name{
+    left: -100%;
+} */
+
+@media(max-width:768px){
+    .menuScreen{
+        display: none;
+    }
+    #menuBtn{
+        display: block;
+    }
+
+}

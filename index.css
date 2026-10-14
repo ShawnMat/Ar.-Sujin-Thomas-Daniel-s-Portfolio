@@ -1,24 +1,30 @@
-@font-face {
+/* @font-face {
     font-family: "Might";
     src: url("fonts/Might.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 html,body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Might", sans-serif;
+    font-family: "Inter", sans-serif;
     text-decoration: none;
     list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", serif;
 }
 ul{
     list-style: none;
     padding: 0px;
 }
-
+.heading{
+    /* font-size: 60px; */
+    margin: 0px;
+}
 
 figure {
     margin: 0;
@@ -44,20 +50,26 @@ figure {
     position: absolute;
     margin: 0;
     /* font-size: 80px; */
-    font-size: clamp(32px, calc(50px + 5vw), 130px);
+    font-size: clamp(32px, calc(15px + 5vw), 130px);
     font-weight: 500;
 }
-.line{
-    font-size: clamp(30px, 5vw, 30px);
-}
 
-.heroText p:nth-child(1) {
+
+.line{
+    /* font-size: clamp(30px, 5vw, 30px); */
+}
+.name,.portfolioWebsite{
+    font-size: clamp(50px, calc(30px + 5vw), 130px);
+}
+.name{
+    position: absolute;
     top: 10%;
     left: 5%;
     /* color: #BEC3C9; */
 }
 
-.heroText p:nth-child(5) {
+.portfolioWebsite{
+    position: absolute;
     bottom: 5%;
     right: 5%;
 }
@@ -81,6 +93,8 @@ figure {
 #menuBtn{
     display: none;
     font-size: 30px;
+    font-size: clamp(32px, calc(0px + 5vw), 130px);
+
 }
 #menuBtn{
     position: absolute;
@@ -95,7 +109,7 @@ figure {
 .menuScreen ul{
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 15px;
 }
 .menuScreen ul li a {
     text-decoration: none;
@@ -129,13 +143,13 @@ figure {
 }
 
 #navItemsList{
-    margin-top: 200px;
+    margin-top: 120px;
     list-style: none;
 }
 #navItemsList li a{
     text-decoration: none;
     color: inherit;
-    font-size: 70px;
+    /* font-size: 50px; */
 }
 hr{
     margin: 0px;
@@ -143,7 +157,43 @@ hr{
 /* .name{
     left: -100%;
 } */
+.exploreBtn{
+    border: 1.5px solid black;
+}
+.project{
+    height: 95dvh;
+    display: flex;
+    align-items: center;
+}
 
+
+/* WORK - NEW DESIGN */
+#work{
+    /* margin-top: 50px; */
+    background-color: #F5F5F5;
+    /* height: 100dvh; */
+} 
+.workContainer{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+}
+
+/* #careerLine{
+    border-top: 2px solid ;
+} */
+#life{
+    background-color: #F5F5F5;
+}
+#contact{
+    background-color: black;
+    color: white;
+    
+}
+footer{
+    background-color: #F5F5F5;
+}
 @media(max-width:768px){
     .menuScreen{
         display: none;
@@ -151,5 +201,8 @@ hr{
     #menuBtn{
         display: block;
     }
+
+}
+@media(max-width:992px){
 
 }

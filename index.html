@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website | Ar. Sujin Thomas Daniel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- playfair display / inter -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    
+    <!-- manrope / cormorant garamond -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <!-- Montserrat + Open Sans -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <!-- DM Sans + DM Sans -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <!-- Oswald + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -16,19 +43,19 @@
                 <ul id="navItemsList">
                     <hr>
                     <li>
-                        <a href="">Work</a>
+                        <a href="#work">Work</a>
                     </li>
                     <hr>
                     <li>
-                        <a href="">Life</a>
+                        <a href="#career">Career</a>
                     </li>
                     <hr>
                     <li>
-                        <a href="">Career</a>
+                        <a href="#life">Life</a>
                     </li>
                     <hr>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,32 +67,164 @@
             <img src="img/HeroImage7.jpg" alt="HeroImage" id="heroImage">
         </figure>
         <div class="heroText">
-            <p class="name">Ar. Sujin Thomas Daniel</p>
+            <h1 class="name">AR. SUJIN THOMAS DANIEL</h1>
             <div class="line">
             </div>
             <p id="menuBtn">Menu</p>
             <div class="menuScreen">
                 <ul>
                     <li>
-                        <a href="" class="listItems">Home</a>
+                        <a href="#" class="listItems">Home</a>
                     </li>
                     <li>
-                        <a href="" class="listItems">Work</a>
+                        <a href="#work" class="listItems">Work</a>
                     </li>
                     <li>
-                        <a href="" class="listItems">Life</a>
+                        <a href="#career" class="listItems">Career</a>
                     </li>
                     <li>
-                        <a href="" class="listItems">Career</a>
+                        <a href="#life" class="listItems">Life</a>
                     </li>
                     <li>
-                        <a href="" class="listItems">Contact</a>
+                        <a href="#contact" class="listItems">Contact</a>
                     </li>
                 </ul>
             </div>
-            <p class="portfolioWebsite">Portfolio Website</p>
+            <h1 class="portfolioWebsite">PORTFOLIO WEBSITE</h1>
         </div>
     </section>
+    <section id="work">
+        <div class="container pt-4">
+            <article class="d-flex justify-content-between">
+                <span>01</span>
+                <span>work / project 1</span>
+                <span>10 / 11 / 2025</span>
+            </article>
+            <hr>
+            <div id="project1" class="project">
+                <div class="row mt-5">
+                    <div class="col-xl-7">
+                        <figure>
+                            <img src="img/ProjectImage 1.png" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-xl-5 mb-5">
+                        <div class="projectDetails">
+                            <h1>The Harmony Cultural Center</h1>
+                            <p>The Harmony Cultural Center is a visionary civic and cultural landmark designed to seamlessly bridge contemporary architecture with urban ecology. Situated along a vibrant waterfront and adjacent to a historic cityscape, the project redefines the traditional cultural hub by treating the building as an extension of the public landscape.</p>
+                            <p>The structure is defined by its sweeping, organic curves and terraced green roofs that cascade downward, inviting the community to walk across, sit upon, and inhabit the architecture. By utilizing sustainable mass timber louvers, expansive floor-to-ceiling glass facades, and undulating green terraces, the building fosters a continuous dialogue between indoor cultural spaces and the surrounding natural environment.</p>
+                        </div>
+                        <!-- <hr>
+                        <p></p>
+                        <hr> -->
+                        <button class="btn exploreBtn d-flex gap-2 align-items-center rounded-0 mt-2 " id="explorePrj1">
+                            <p class="m-0">Explore</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <article class="d-flex justify-content-between pt-4">
+                <span>02</span>
+                <span>work / project 2</span>
+                <span>21 / 03 / 2025</span>
+            </article>
+            <hr>
+            <div id="project2" class="project">
+                <div class="row mt-5">
+                    <div class="col-xl-7">
+                        <figure>
+                            <img src="img/ProjectImage 2.png" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-xl-5 mb-5">
+                        <div class="projectDetails">
+                            <h1>The Serene Sanctuary: A Biophilic Open-Concept Living Space</h1>
+                            <p>This project embodies a harmonious blend of modern architecture and natural tranquility, creating an inviting and cohesive open-concept living, dining, and kitchen area. The space features floor-to-ceiling industrial-style glass doors that open out onto a lush garden patio, successfully blurring the lines between interior comfort and exterior nature.</p>
+                            <p>Abundant natural light filters through the expansive windows to nurture vibrant indoor greenery, including a prominent fiddle-leaf fig and trailing shelf plants that reinforce biophilic principles.</p>
+                        </div>
+                        <!-- <hr>
+                        <p></p>
+                        <hr> -->
+                        <button class="btn exploreBtn d-flex gap-2 align-items-center rounded-0 mt-2" id="explorePrj2">
+                            <p class="m-0">Explore</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <article class="d-flex justify-content-between pt-4">
+                <span>03</span>
+                <span>work / project 3</span>
+                <span>14 / 06 / 2024</span>
+            </article>
+            <hr>
+            <div id="project2" class="project">
+                <div class="row mt-5">
+                    <div class="col-xl-7">
+                        <figure>
+                            <img src="img/ProjectImage 2.png" alt="" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-xl-5 mb-5">
+                        <div class="projectDetails">
+                            <h1>The Serene Sanctuary: A Biophilic Open-Concept Living Space</h1>
+                            <p>This project embodies a harmonious blend of modern architecture and natural tranquility, creating an inviting and cohesive open-concept living, dining, and kitchen area. The space features floor-to-ceiling industrial-style glass doors that open out onto a lush garden patio, successfully blurring the lines between interior comfort and exterior nature.</p>
+                            <p>Abundant natural light filters through the expansive windows to nurture vibrant indoor greenery, including a prominent fiddle-leaf fig and trailing shelf plants that reinforce biophilic principles.</p>
+                        </div>
+                        <!-- <hr>
+                        <p></p>
+                        <hr> -->
+                        <button class="btn exploreBtn d-flex gap-2 align-items-center rounded-0 mt-2" id="explorePrj2">
+                            <p class="m-0">Explore</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="career" class="bg-black text-white h-100">
+        <div class="container pt-4">
+            <article class="d-flex justify-content-between">
+                <span>04</span>
+                <span>career trajectory</span>
+                <span></span>
+            </article>
+            <hr id="careerLine">
+        </div>
+    </section>
+    <section id="life" class="h-100">
+        <div class="container pt-4">
+            <article class="d-flex justify-content-between">
+                <span>05</span>
+                <span>life</span>
+                <span></span>
+            </article>
+            <hr id="lifeLine">
+        </div>
+    </section>
+   <section id="contact" class="h-100">
+        <div class="container pt-4">
+            <article class="d-flex justify-content-between">
+                <span>06</span>
+                <span>contact</span>
+                <span></span>
+            </article>
+            <hr id="contactLine">
+        </div>
+   </section>
+   <footer class="h-50">
+
+   </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
